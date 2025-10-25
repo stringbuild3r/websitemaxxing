@@ -5,23 +5,12 @@ function App() {
   const [expandedProject, setExpandedProject] = useState<string | null>(null)
   const [expandedFaq, setExpandedFaq] = useState<string | null>(null)
 
-  const toggleProject = (projectId: string) => {
-    setExpandedProject(expandedProject === projectId ? null : projectId)
-  }
-
-  const toggleFaq = (faqId: string) => {
-    setExpandedFaq(expandedFaq === faqId ? null : faqId)
-  }
-
   return (
     <div className="app">
       <header className="header">
         <div className="profile-img">👤</div>
         <nav className="nav">
-          <a href="#">CONTACT</a>
-          <a href="#">LINKEDIN</a>
-          <a href="#">GITHUB</a>
-          <a href="#">TWITTER/X</a>
+          <a href="#">agupta62 [at] umd [dot] terpmail [dot] edu </a>
         </nav>
       </header>
 
@@ -54,7 +43,7 @@ function App() {
             <div className="project-item" >
               <span>&gt; a shell that aims to make zsh usable with reproducible shell scripts in rust</span>
             </div>
-            <div className="project-item" onClick={() => toggleProject('facial')}>
+            <div className="project-item" >
               <span>&gt; a reproduction of GPT-2 in python</span>
             </div>
           </div>
@@ -64,7 +53,7 @@ function App() {
         <footer className="footer">
           <p>I'd love to hear from you! want to hire me? or simply wanna chat? feel free to reach out by</p>
           <p>📧 <a href="mailto:aryamangupta52@gmail.com">email</a>, or connect with me on 💼 <a href="https://www.linkedin.com/in/aryaman-gupta-541b61341/">linkedin</a>.</p>
-          <p>want to read my thoughts → 📝 <a href="#">blogs </a> (working on this page structure) </p>
+          <p>want to read my thoughts → 📝 <a href="#">blogs </a> (working on the structure of page) </p>
         </footer>
       </main>
     </div>

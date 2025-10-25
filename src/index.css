@@ -1,4 +1,32 @@
 @font-face {
+  font-family: 'TX-02';
+  src: url('./assets/fonts/TX-02-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TX-02';
+  src: url('./assets/fonts/TX-02-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TX-02';
+  src: url('./assets/fonts/TX-02-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TX-02';
+  src: url('./assets/fonts/TX-02-Bold-Oblique.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Minecraft';
   src: url('./assets/fonts/MinecraftRegular.otf') format('opentype');
   font-weight: normal;
@@ -6,7 +34,7 @@
 }
 
 :root {
-  font-family: 'Minecraft', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'TX-02', 'Minecraft', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
