@@ -44,14 +44,15 @@ function App() {
           <p>Previously I...</p>
           <div className="activity">
             <span>&gt; was a student at Quarry Lane School</span>
+            <span>&gt; a McDonald's line cook reject</span>
           </div>
         </div>
 
         <div className="projects-section">
           <p>A few projects I'm working on...</p>
           <div className="project-list">
-            <div className="project-item" onClick={() => toggleProject('tiktok')}>
-              <span>&gt; a shell that aims to make zsh usable with readable shell scripts in rust</span>
+            <div className="project-item" >
+              <span>&gt; a shell that aims to make zsh usable with reproducible shell scripts in rust</span>
             </div>
             <div className="project-item" onClick={() => toggleProject('facial')}>
               <span>&gt; a reproduction of GPT-2 in python</span>
@@ -59,26 +60,6 @@ function App() {
           </div>
         </div>
 
-        <div className="faq-section">
-          <h2>What else do you want to know about me?</h2>
-          <div className="faq-list">
-            <div className="faq-item" onClick={() => toggleFaq('tokens')}>
-              <span>&gt; how many tokens is this message</span>
-              {expandedFaq === 'tokens' && (
-                <div className="faq-answer">
-                  ● I do not have the ability to count tokens.
-                </div>
-              )}
-            </div>
-            <div className="faq-item" onClick={() => toggleFaq('anything')}>
-              <span>&gt; ask me anything</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="help-text">
-          Type /help for commands
-        </div>
 
         <footer className="footer">
           <p>I'd love to hear from you! want to hire me? or simply wanna chat? feel free to reach out by</p>

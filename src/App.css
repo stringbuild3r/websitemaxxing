@@ -1,19 +1,19 @@
 .app {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   color: rgba(255, 255, 255, 0.87);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
   border-bottom: 1px solid #333;
   margin-bottom: 2rem;
 }
