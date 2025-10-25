@@ -1,0 +1,193 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.87);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  position: relative;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+.main {
+  line-height: 1.8;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+  color: #fff;
+}
+
+.current-section,
+.previous-section {
+  margin: 2rem 0;
+}
+
+.activity {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.activity span {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.projects-section {
+  margin: 2rem 0;
+}
+
+.project-list {
+  margin: 1rem 0;
+}
+
+.project-item {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  cursor: pointer;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.project-item:hover {
+  color: #fff;
+}
+
+.quote {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  background: #2a2a2a;
+  border-left: 4px solid #555;
+  color: #ddd;
+  font-style: italic;
+}
+
+.faq-section {
+  margin: 3rem 0;
+}
+
+.faq-section h2 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.faq-list {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.faq-item {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.faq-item:hover {
+  color: #fff;
+}
+
+.faq-answer {
+  margin: 0.5rem 0 1rem 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.help-text {
+  margin: 2rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin: 3rem 0 1rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+a {
+  color: #89CFF0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B0E0E6;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0.8rem 0;
+  color: #ccc;
+}
