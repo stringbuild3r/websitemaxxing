@@ -307,16 +307,6 @@ function App() {
   return (
     <div className="terminal-container" onClick={focusInput}>
       <div className="terminal-window">
-        <div className="terminal-titlebar">
-          <div className="titlebar-buttons">
-            <span className="btn-close"></span>
-            <span className="btn-minimize"></span>
-            <span className="btn-maximize"></span>
-          </div>
-          <div className="titlebar-title">aryan@portfolio:~</div>
-          <div className="titlebar-spacer"></div>
-        </div>
-
         <div className="terminal-nav">
           <button
             className={`nav-btn ${activeSection === 'about' ? 'active' : ''}`}

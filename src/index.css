@@ -26,41 +26,46 @@
   font-style: italic;
 }
 
-/* Gruvbox Dark Theme */
+/* Custom Dark Theme */
 :root {
   /* Background colors */
-  --bg-hard: #1d2021;
-  --bg: #282828;
-  --bg-soft: #32302f;
-  --bg1: #3c3836;
-  --bg2: #504945;
-  --bg3: #665c54;
-  --bg4: #7c6f64;
+  --bg-hard: #101010;
+  --bg: #101010;
+  --bg-soft: #181818;
+  --bg1: #1a1a1a;
+  --bg2: #252525;
+  --bg3: #353535;
+  --bg4: #454545;
 
   /* Foreground colors */
-  --fg: #ebdbb2;
-  --fg0: #fbf1c7;
-  --fg1: #ebdbb2;
-  --fg2: #d5c4a1;
-  --fg3: #bdae93;
-  --fg4: #a89984;
+  --fg: #ffffff;
+  --fg0: #ffffff;
+  --fg1: #ffffff;
+  --fg2: #b9beb8;
+  --fg3: #a0a0a0;
+  --fg4: #7e7e7e;
 
   /* Accent colors */
-  --red: #fb4934;
-  --red-dim: #cc241d;
-  --green: #b8bb26;
-  --green-dim: #98971a;
-  --yellow: #fabd2f;
-  --yellow-dim: #d79921;
-  --blue: #83a598;
-  --blue-dim: #458588;
-  --purple: #d3869b;
-  --purple-dim: #b16286;
-  --aqua: #8ec07c;
-  --aqua-dim: #689d6a;
-  --orange: #fe8019;
-  --orange-dim: #d65d0e;
-  --gray: #928374;
+  --red: #ff8080;
+  --red-dim: #ea83a5;
+  --green: #90b99f;
+  --green-dim: #90b99f;
+  --yellow: #e6b99d;
+  --yellow-dim: #e6b99d;
+  --blue: #99ffe4;
+  --blue-dim: #99ffe4;
+  --purple: #aca1cf;
+  --purple-dim: #b9aeda;
+  --aqua: #99ffe4;
+  --aqua-dim: #99ffe4;
+  --orange: #ffc799;
+  --orange-dim: #f5a191;
+  --gray: #7e7e7e;
+
+  /* Selection colors */
+  --selection-bg: #988049;
+  --selection-fg: #b9beb8;
+  --cursor: #acb1ab;
 
   font-family: 'TX-02', 'Berkeley Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
   line-height: 1.6;
@@ -94,8 +99,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--bg3);
-  color: var(--fg0);
+  background-color: var(--selection-bg);
+  color: var(--selection-fg);
 }
 
 a {
