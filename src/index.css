@@ -26,21 +26,50 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: 'Minecraft';
-  src: url('./assets/fonts/MinecraftRegular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* Gruvbox Dark Theme */
 :root {
-  font-family: 'TX-02', 'Minecraft', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Background colors */
+  --bg-hard: #1d2021;
+  --bg: #282828;
+  --bg-soft: #32302f;
+  --bg1: #3c3836;
+  --bg2: #504945;
+  --bg3: #665c54;
+  --bg4: #7c6f64;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #1a1a1a;
+  /* Foreground colors */
+  --fg: #ebdbb2;
+  --fg0: #fbf1c7;
+  --fg1: #ebdbb2;
+  --fg2: #d5c4a1;
+  --fg3: #bdae93;
+  --fg4: #a89984;
+
+  /* Accent colors */
+  --red: #fb4934;
+  --red-dim: #cc241d;
+  --green: #b8bb26;
+  --green-dim: #98971a;
+  --yellow: #fabd2f;
+  --yellow-dim: #d79921;
+  --blue: #83a598;
+  --blue-dim: #458588;
+  --purple: #d3869b;
+  --purple-dim: #b16286;
+  --aqua: #8ec07c;
+  --aqua-dim: #689d6a;
+  --orange: #fe8019;
+  --orange-dim: #d65d0e;
+  --gray: #928374;
+
+  font-family: 'TX-02', 'Berkeley Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 15px;
+
+  color-scheme: dark;
+  color: var(--fg);
+  background-color: var(--bg-hard);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,58 +77,59 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+* {
+  box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg3) var(--bg);
 }
 
 body {
   margin: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
   padding: 0;
+  min-height: 100vh;
+  background-color: var(--bg-hard);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+::selection {
+  background-color: var(--bg3);
+  color: var(--fg0);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--aqua);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--fg0);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+code {
   font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--bg1);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+pre {
+  font-family: inherit;
+  background-color: var(--bg1);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
 }
